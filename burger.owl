@@ -1,0 +1,811 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_burgers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_burgers">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_size -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_size">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#has_value">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Burger_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Burger_name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#address">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#phone_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#phone_number">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Bacon_DoubleXL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Bacon_DoubleXL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Bacon_king_JR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Bacon_king_JR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Big_KingXL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Big_KingXL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_Nuggets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_Nuggets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_fries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_fries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Hamburgers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Hamburgers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Long_big_king -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Long_big_king">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Long_texas_bbq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Long_texas_bbq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Roadhouse_crispy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Roadhouse_crispy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#breakfast_king -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#breakfast_king">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chicken_popcorn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chicken_popcorn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chocolate_sundae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chocolate_sundae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#coffees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#coffees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_Hamburger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_Hamburger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_cheese_burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_cheese_burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_veggie_burger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_veggie_burger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#mac_N_cheese_bites -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#mac_N_cheese_bites">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#soft_drinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#soft_drinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#steakhouse_angus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#steakhouse_angus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#strawberry_sundae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#strawberry_sundae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#value"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#whooper_sandwich -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#whooper_sandwich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Flame_grilled_burger"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_Nuggets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Chicken_Nuggets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>special chicken nuggets</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+        <Burger_name>Chicken fries</Burger_name>
+        <size>large</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+        <Burger_name>Crispy_chicken</Burger_name>
+        <size>large</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Crispy_and_tender_chicken"/>
+        <Burger_name>Roadhouse_crispy</Burger_name>
+        <size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</size>
+        <size>large</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Frame_grilled_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Frame_grilled_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>steakhouse_angus</Burger_name>
+        <Burger_name>whooper_sandwich</Burger_name>
+        <size>medium</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Kids_meals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>coffees</Burger_name>
+        <Burger_name>soft_drinks</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+        <Burger_name>chocolate_sundae</Burger_name>
+        <size>medium</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals"/>
+        <Burger_name>coffees</Burger_name>
+        <size>large</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+        <Burger_name>Hamburgers</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>breakfast_king</Burger_name>
+        <Burger_name>mac_N_cheese_bites</Burger_name>
+        <size>big</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+        <Burger_name>breakfast_king</Burger_name>
+        <size>medium</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+        <Burger_name>chicken_popcorn</Burger_name>
+        <size>large</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#New_deals"/>
+        <Burger_name>mac_N_cheese_bites</Burger_name>
+        <size>medium</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#crispy_and_tender_chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#crispy_and_tender_chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>Roadhouse_crispy</Burger_name>
+        <Burger_name>chicken fries</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>Cambridge</address>
+        <customer_name>navya</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1133</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>india</address>
+        <customer_name>havya</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1234</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>cambridge</address>
+        <customer_name>abdul</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123456</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>delhi</address>
+        <customer_name>aishwarya</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123456789</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>mysore</address>
+        <customer_name>shruti</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78456</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>banglore</address>
+        <customer_name>lavanya</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">456123</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>hyderbad</address>
+        <customer_name>jasmine</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74123</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>chennai</address>
+        <customer_name>vania</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">852036</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#customer"/>
+        <address>cambridge</address>
+        <customer_name>shakti</customer_name>
+        <phone_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9632145</phone_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_Hamburger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_Hamburger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>normal</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_cheese_burger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#kids_cheese_burger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>hot and spicy burger</Burger_name>
+        <size>small</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#king_deals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#Types_of_serves"/>
+        <Burger_name>Bacon_king_JR</Burger_name>
+        <Burger_name>Long_texas_bbq</Burger_name>
+        <size>medium</size>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+        <location>cambridge</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+        <location>hyderabad</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+        <location>bangalore</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#location"/>
+        <location>mysore</location>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
