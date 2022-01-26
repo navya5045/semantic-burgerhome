@@ -339,7 +339,7 @@
     <!-- http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chocolate_sundae -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#chocolate_sundae">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King_servers"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/havya/ontologies/2019/11/untitled-ontology-10#King__servers"/>
     </owl:Class>
     
 
